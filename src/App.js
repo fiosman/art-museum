@@ -1,7 +1,12 @@
 import "./App.css";
+import GalleryNavigation from "./components/GalleryNavigation/GalleryNavigation.js";
 
 function App() {
-  return <div>Hey there</div>;
+  return (
+    <>
+      <GalleryNavigation />
+    </>
+  );
 }
 
 export default App;
