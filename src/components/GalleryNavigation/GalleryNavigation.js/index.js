@@ -12,7 +12,8 @@ const GalleryNavigation = ({ galleries }) => {
   return (
     <nav>
       <NavLink to="/">Home</NavLink>
-      <h1>Galleries </h1>
+      <h2>Harvard Art Museum</h2>
+      <p>Look, but don't touch. Please select a Gallery in the navigation bar</p>
       {buildGalleries()}
     </nav>
   );
