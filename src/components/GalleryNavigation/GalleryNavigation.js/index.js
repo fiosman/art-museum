@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./GalleryNavigation.css";
+
 const GalleryNavigation = ({ galleries }) => {
   const buildGalleries = () =>
     galleries.map((gallery, idx) => (
