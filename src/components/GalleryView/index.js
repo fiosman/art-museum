@@ -4,9 +4,13 @@ import { NavLink } from "react-router-dom";
 import ArtImageTile from "../ArtImageTile";
 
 const GalleryView = ({ galleries }) => {
+  console.log(galleries);
   const params = useParams();
   const buildGallery = () =>
     galleries.find((gallery) => gallery.gallerynumber === params.galleryId).name;
+
+  const BuildArtImageTiles = () =>
+    galleries.map((gallery) => <ArtImageTile prop={gallery.objects[0].images} />);
 
   return (
     <div>
@@ -14,7 +18,7 @@ const GalleryView = ({ galleries }) => {
         <NavLink to="/">Home</NavLink>
       </nav>
       <h2>{buildGallery()}</h2>
-      <ArtImageTile />
+      <BuildArtImageTiles />
     </div>
   );
 };
