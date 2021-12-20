@@ -10,7 +10,7 @@ const GalleryView = ({ galleries }) => {
     galleries.find((gallery) => gallery.gallerynumber === params.galleryId).name;
 
   const BuildArtImageTiles = () =>
-    galleries.map((gallery) => <ArtImageTile prop={gallery.objects[0].images} />);
+    galleries.map((gallery) => <ArtImageTile art={gallery.objects[0].images[0]} />);
 
   return (
     <div>
