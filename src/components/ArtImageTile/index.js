@@ -1,8 +1,7 @@
 import React from "react";
 
 const ArtImageTile = ({ art }) => {
-  console.log(art);
-  return <div>Test</div>;
+  return <div>{art.images[0].imageid}</div>;
 };
 
 export default ArtImageTile;
