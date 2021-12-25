@@ -6,7 +6,7 @@ const GalleryNavigation = ({ galleries }) => {
   const buildGalleries = () =>
     galleries.map((gallery, idx) => (
       <NavLink key={idx} to={`/galleries/${gallery.galleryid}`}>
-        {gallery.name}
+        {gallery.name} <br />
       </NavLink>
     ));
 
