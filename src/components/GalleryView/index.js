@@ -11,7 +11,7 @@ const GalleryView = ({ galleries }) => {
 
   const BuildArtImageTiles = () => {
     const currentGallery = galleries.find((gallery) => gallery.gallerynumber === params.galleryId);
-    return currentGallery.objects.map((works) => <ArtImageTile art={works} />);
+    return currentGallery.objects.map((artWork) => <ArtImageTile art={artWork.images[0]} />);
   };
 
   return (
