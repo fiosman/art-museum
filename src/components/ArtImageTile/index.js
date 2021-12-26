@@ -11,8 +11,6 @@ const ArtImageTile = ({ art }) => {
       </Link>
     </div>
   );
-
-  // {art.images[0].imageid}</div>;
 };
 
 export default ArtImageTile;
